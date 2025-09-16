@@ -1,12 +1,32 @@
 {
-  "name": "libreria",
-  "version": "0.0.0",
+  "name": "boton-yesica-angular",
+  "version": "1.0.0",
+  "description": "Un componente de botón personalizado para Angular creado por Yesica",
+  "keywords": [
+    "angular",
+    "component",
+    "button",
+    "yesica",
+    "ui"
+  ],
+  "author": "Yesica",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yesei94/angular-component.git"
+  },
+  "homepage": "https://github.com/Yesei94/angular-component#readme",
+  "bugs": {
+    "url": "https://github.com/Yesei94/angular-component/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-lib": "ng build boton-yesica-lib",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pack-lib": "cd dist/boton-yesica-lib && npm pack"
   },
   "prettier": {
     "printWidth": 100,
@@ -20,7 +40,7 @@
       }
     ]
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
@@ -43,6 +63,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^20.3.0",
     "typescript": "~5.9.2"
   }
 }

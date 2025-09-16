@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "boton-yesica-lib": [
+        "./dist/boton-yesica-lib"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -29,6 +34,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/boton-yesica-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/boton-yesica-lib/tsconfig.spec.json"
     }
   ]
 }
